@@ -1,0 +1,33 @@
+===== 1. Create a github repository =======
+Create a repository
+
+
+=========== 2. Initialize the new repository ================
+echo "# large_files_test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/brightagbor/large_files_test.git
+git push -u origin main
+
+============== 3. Install Git Large files ===============
+git lfs install 
+
+============ 4. Track all the large files with .h5 file extension ============= 
+git lfs track "*.h5"
+
+================= 5. Push the large file ================
+git lfs push --all origin main
+
+============== 6 ==============
+git add .
+
+================ 7. ==================
+git commit -m "Large files commit to GitHub"
+
+
+================ 8. ================
+git push -u origin main
+
+
